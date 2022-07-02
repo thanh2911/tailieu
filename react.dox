@@ -1,0 +1,55 @@
+* React js là gì : Một thư viện JavaScript xây dựng giao diện người dùng
+
+* JSX = Javascript + XML. Nó transform cú pháp dạng gần như XML về thành Javascript. 
+Giúp người lập trình có thể code ReactJS bằng cú pháp của XML thay vì sử dụng Javascript. 
+Các XML elements, attributes và children được chuyển đổi thành các đối số truyền vào React.createElement.
+
+* Sự khác nhau giữa Props và State trong ReactJS : 
+- Props (properties): đối số của function , Không thể thay đổi dữ liệu của props .
+- State : là giá trị riêng của component , 
+	  Có thể thay đổi đc state , khi state thay đổi thì component sẽ đc render lại
+	
+
+* Components cho phép bạn chia UI thành các phần độc lập, có thể tái sử dụng, và hoàn toàn tách biệt nhau. 
++ Function Components
+	- Một function Javascript / ES6 function
+	- Phải trả về 1 React element
+	- Nhận props làm tham số nếu cần
+
++ Class Components : phương thức khởi tạo, life-cycle, hàm render() và quản lý state (data)
+	- Là một class ES6, nó sẽ là một component khi nó "kế thừa" React component.
+	- Có thể nhận props (trong hàm khởi tạo) nếu cần.
+	- Có thể maintain data của nó với state
+	- Phải có 1 method render() trả về 1 React element (JSX), or null
+
+Chyển đổi Function thành Class
+Bạn có thể chuyển đổi một function của thành phần như Clock thành class trong năm bước:
+
+Tạo một ES6 class, cùng tên, cho nó extends React.Component.
+Thêm một phương thức rỗng gọi là render().
+Di chuyển nội dung của function vào bên trong phương thức render()
+Thay thế props thành this.props trong nội dung của render().
+Xóa khai function rỗng thừa lại mà ta đã lấy nội dung từ nó.
+React Hook :
+
+useState : useState cho phép chúng ta khai báo local state trong Function Component cách mà trước 
+	 để chỉ dùng cho Class Component
+	- state: định nghĩa tên của state nó có thể là đơn giá trị hoặc object,.. (là thamg số của useState)
+	- setState: định nghĩa tên function dùng cho việc update state (là thamg số của useState)
+	- initialStateValue: là giá trị ban đầu của state
+useEffect : mục đích useEffect để quản lý vòng đời của của một component và nó phục vụ chúng ta sử dụng trong function component 
+thay vì các lifecycle như trước đây trong class component.
+
+useContext:
+
+useRef : một function trả về một object với thuộc tính current được khởi tạo thông qua tham số truyền vào.
+	Truy cập DOM nodes hoặc React elements và lưu giữ một biến có thể mutate.
+	Trong React, ref là một thuộc tính của một tag hay một element đại diện cho chính nó 	
+
+useReducer :
+
+useMemo :
+	React memo sinh ra với mục địch tránh việc rerender nhiều lần ảnh hưởng đến performance .
+	useMemo tránh cho việc tính toán lại một function lặp đi lặp lại nhiều lần mỗi lần component re-ren
+
+useCallback : 

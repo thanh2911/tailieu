@@ -1,0 +1,140 @@
+1. JavaScript để lập trình hành vi của các trang web , giúp web trở nên sống động hơn .
+
+* Kiểu dữ liệu : 
+- Number
+- Boolean
+- String
+- Null
+- Undefined
+- Object
+
+* Array : 
+- toString() => chuyển thành array thành string ,
+- join() => giống string nhưng có thể thay đổi dấu , => . / ...
+- concat() => nối mảng 
+- pop() => xóa p/tử cuối mảng
+- push() => thêm p/tử cuối mảng
+
+- shift() => xóa p/tử đầu mảng
+- unshift() => thêm p/tử đầu mảng
+
+- splice(1,2) => có thể dùng để lựa chọn phần tử, xóa p/tử
+
+*Array 2 : 
+
+- forEach() : => duyệt qua từng p/tử array
+
+- every() : => kiểm tra t/cả p/tử thỏa mảng 1 đ/kiện (true/false)
+
+- some() : =>  kiểm tra t/cả p/tử thỏa mảng chỉ cần 1 p/tử 1 đ/kiện (true/false)
+
+- find() : => Tìm kiếm 1 phần tử => 1 p/tử thỏa mảng đ/kiện
+
+- filter() : => Tìm kiếm n phần tử => n p/tử thỏa mảng đ/kiện
+
+- map() : => duyệt và gọi lại các phần tử mảng
+
+- reduce() : biến lưu trữ và thực hiện lưu trữ => return  a + b , nối mảng return item.concat(index)
+
+* DOM : Document Object Model- DOM được dùng để truy xuất và thao tác trên các tài liệu có cấu trúc 
+
+DOM co 3 thanh phan 
+  1. Element
+  2. Attribute
+  3. Text dạng HTML hay XML bằng các ngôn ngữ lập trình thông dụng như Javascript, PHP…
+
+  DOM document: lưu trữ toàn bộ các thành phần trong documents của website.
+  DOM element: truy xuất tới thẻ HTML nào đó thông qua các thuộc tính như tên class, id, name của thẻ HTML.
+  DOM HTML: thay đổi giá trị nội dung và giá trị thuộc tính của các thẻ HTML.
+  DOM CSS: thay đổi các định dạng CSS của thẻ HTML.
+  DOM Event: gán các sự kiện như onclick(), onload() vào các thẻ HTML.
+  DOM Listener: lắng nghe các sự kiện tác động lên thẻ HTML.
+
+# BEM :
+- Là tiêu chuẩn đặt tên class khi viết css
+
+## Ý nghĩa :
+- Viết tắt của : Block Element Modifier
+- Block : khối 
+- Element : Thành phần trong khối 
+- Nodifier : Bổ sung ý nghĩa cho `Block` hoặc `Element`
+
+ Cú pháp Bem
+ .block__element--modifier
+
+Es6 : 
+
+1.Hoisting : là hành vi mặc định của JavaScript để di chuyển các khai báo lên trên cùng.
+	+ var => đc hỗ trợ hosting || let,const thì không
+2. So sánh (var) , let , const :
+	- Code block : {} , if() , for ...  phạm vi bên ngoài block 
+		+ var thì truy cập đc
+		+ let , const : ko truy cập dc
+	- Assignment (Gan lai bien ) Const / Var,let :
+		+ var , let : gan lai bien dc
+		+ const : khong gan lai bien dc
+
+3. Callback : Gọi lại là một function sẽ được thực thi sau khi một function khác đã được thực thi xong
+	- là 1 hàm và được truyền qua đối số của hàm khác
+ Khi nào xử dụng callback : Khi tạo event => đưa 1 callback function => khi mhuoiwf dùng bấm, hover => sẽ gọi hàm
+
+* Promise (ES6) là k/n sinh ra để giúp chúng ta xử lí những thao tác bất đông bộ . để gải quyết vấn đề  
+ (callback hell) giúp code của ta không bị xâu vào, dễ đọc dễ hiểu hơn 
+
+ Để tạo ra promise => new promise 
+- Trong contructor promise => ta truyền vào executor function
+- Trong executor function thực thi nhận đc 2 tham số (resolve , reject)
+    + gọi resolve khi thao tác xủ lí logic của chúng ta thành công
+    + gọi reject khi thao tác xủ lí logic của chúng ta thất bại
+
+- Đối tượng promise đc tạo ra : 2 phương thức : 
+    .then() : lọt then() khi promise resolve
+    .catch() : lọt catch() khi promise reject
+
+* Async / Await (ES7) là một tính năng của JavaScript giúp chúng ta làm việc với các hàm bất 
+đồng bộ theo cách thú vị hơn và dễ hiểu hơn. Nó được xây dựng trên Promises .
+
+	- Async - khai báo một hàm bất đồng bộ 
+	- Await - tạm dừng việc thực hiện các hàm async
+
+4. So sánh == và === : 
+"==" so sánh giá trị. ( vd : 1== '1' true )
+
+"===" so sánh giá trị và kiểu dữ liệu. ( vd : 1 === '1' false )
+
+* "This" trong javascript được dùng để làm gì?
+Từ khóa "this" trong javascript tham chiếu đến đối tượng mà nó thuộc về.
+"This" có các giá trị khác nhau phụ thuộc vào nơi nó được sử dụng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+findIndex() :
+- array.findIndex() trong javascript, đây là hàm dùng để tìm vị trí đầu tiên của phần tử được 
+tìm thấy thỏa điều kiện nào đó.

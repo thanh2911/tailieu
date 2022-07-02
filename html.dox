@@ -1,0 +1,21 @@
+*HTML : HTML là viết tắt của HyperText Markup Language (ngôn ngữ đánh dấu siêu văn bản) 
+dùng mô tả cấu trúc các thành phần trong 1 trang web , phân chia các đoạn văn , heading , links ...
+
+* Cấu trúc 1 trang html và ý nghĩa : 
+<!Doctype>: Phần khai báo chuẩn của html hay xhtml.
+<head></head>: Phần khai báo ban đầu, khai báo về meta, title, css, javascript…
+<body></body>: Phần chứa nội dung của trang web, nơi hiển thị nội dung.
+
+* Phân biệt inline và block hoặc div vs span khác j nhau :
+Block : luôn bắt đầu trên một dòng mới 
+	trình duyệt sẽ tự động thêm một số khoảng trắng (lề) trước và sau phần tử.
+	luôn chiếm toàn bộ chiều rộng có sẵn (trải dài sang trái và phải hết mức có thể).
+	Hai phần tử khối thường được sử dụng là: <p> và <div>.
+Inline : không bắt đầu trên một dòng mới.
+ 	chỉ chiếm nhiều chiều rộng khi cần thiết.
+
+* Có mấy cách liên kết Css vs HTML :
+
+Inline - Nội tuyến - bằng cách sử dụng style thuộc tính bên trong các phần tử HTML
+Internal - Nội bộ - bằng cách sử dụng một <style>phần tử trong <head>phần
+External - Bên ngoài - bằng cách sử dụng một <link> phần tử để liên kết với tệp CSS bên ngoài
